@@ -27,7 +27,9 @@ Demo live at: [demo.vercel.store](https://demo.vercel.store/)
 
 ## Integrations
 
-Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor and Vendure. We plan to support all major ecommerce backends.
+Initially, Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor and Vendure. We plan to support all major ecommerce backends.
+
+CR Note: All commerce integrations except Shopify has been stripped out of the initial project, to make it easier to work with. The logic for managing mulitple commerce vendors is left in the project however, to adapt for possible future commerce vendor additions.
 
 ## Considerations
 
@@ -79,7 +81,7 @@ For example: Turning `cart` off will disable Cart capabilities.
 
 > NOTE: The selected provider should support the feature that you are toggling. (This means that you can't turn wishlist on if the provider doesn't support this functionality out the box)
 
-- Open `commerce.config.json` 
+- Open `commerce.config.json`
 - You'll see a config file like this:
   ```json
   {
